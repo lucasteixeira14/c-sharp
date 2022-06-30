@@ -20,6 +20,6 @@ namespace Manager.Infra.Context
   }
 
   protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-      => optionsBuilder.UseSqlServer('');
+      => optionsBuilder.UseSqlServer(@"Data Source=LUCAS-PC;Database=manager;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
  }
 }
